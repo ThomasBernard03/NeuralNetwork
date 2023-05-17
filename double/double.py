@@ -9,12 +9,12 @@ model.add(layers.Dense(units=64))
 
 model.add(layers.Dense(units=1))
 
-input = [1, 2, 3, 4, 5]
-output = [2, 4, 6, 8, 10]
+inputList = [1, 2, 3, 4, 5]
+outputList = [2, 4, 6, 8, 10]
 
 model.compile(loss='mean_squared_error', optimizer='adam')
 
-model.fit(x=input, y=output, epochs=1000)
+model.fit(x=inputList, y=outputList, epochs=1000)
 
 
 while True :
